@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Find Parking</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="finder-bar">
+  <div class="finder-title">🚗 Find Parking</div>
+
+  <div class="search-box">
+    <input
+      type="text"
+      id="locationInput"
+      placeholder="Enter city or area (ex: Pune, Delhi)"
+    />
+    <button onclick="searchParking()">Search</button>
+  </div>
+</header>
+
+<div class="finder-container">
+  <div id="map"></div>
+  <div id="results">
+    <p class="hint">Search a city to see parking locations</p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
